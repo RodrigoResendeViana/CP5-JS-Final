@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { ListaPedidos } from '../routes/ListaPedidos';
 import { GrFormEdit as Editar } from 'react-icons/gr';
 import { RiDeleteBin2Fill as Excluir } from 'react-icons/ri';
-import '../Css/Produtos.module.css'
+import styles from '../Css/Pedido.module.css'
 
 function Pedido() {
   return (
@@ -29,11 +29,11 @@ function Pedido() {
                   {' '}
                   {/*Link para chamar a tela de editar produtos */}
                   <Link to={`/Pedido/EditarPedido/${item.id}`}>
-                    <Editar />
+                    <Editar className={styles.icones}/>
                   </Link>{' '}
                   | {/*Link para chamar a tela de excluir produtos */}
                   <Link to={`/Pedido/ExcluirPedido/${item.id}`}>
-                    <Excluir />
+                    <Excluir className={styles.icones}/>
                     {/*espaço entre os links '' */}
                   </Link>{' '}
                 </td>
@@ -45,20 +45,15 @@ function Pedido() {
 
           </tbody>
 
-          <tfoot>
-            <tr>
-              <td colSpan="3">
-                <Link to='/Pedido/InserirPedido'>
-                  <button>Inserir Pedido</button>
-                </Link>
-              </td>
-            </tr>
-          </tfoot>
+       
 
 
 
         </table>
       </div>
+      <Link to='/Pedido/InserirPedido'>
+        <button className={styles.InserirP}>Inserir Pedido</button>
+      </Link>
     </section>
   );
 }
