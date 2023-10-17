@@ -1,0 +1,21 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+input{
+    color: white;
+}
+
+section{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+form{
+    padding-top: 20px;
+}
+
+fieldset{
+    border: none;
+}

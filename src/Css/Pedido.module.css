@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+   
+}
+
+
+a{
+    color: #fff;
+}
+
+table{
+    padding: 10px;
+   
+}
+
+th{
+    padding: 10px;
+    border: 1px solid red;
+}
+td{
+    padding: 10px;
+    border: 1px solid red;
+}
+
+
+

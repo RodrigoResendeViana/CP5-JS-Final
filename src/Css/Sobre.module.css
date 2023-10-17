@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+.container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        color: red;
+        margin: 30px;
+        
+}
+
+.integrantes{
+    flex-direction: column;
+    text-align: center;
+}
+
+.foto{
+    border-radius: 180px;
+    height: 300px;
+    width: 300px;
+    padding: 30px;
+}
+
+.integrantes p{
+    color: red;
+}
